@@ -1,3 +1,3 @@
 # CodeChat-2.0
 
-Rebuild codechat
+CodeChat V2.0 dev branch
