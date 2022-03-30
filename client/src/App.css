@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #005fff;
+  /* --primary-color: #005fff; */
+  --primary-color: #002b75;
   --primary-color-alpha: #005fff1a;
 }
 
@@ -25,9 +26,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   padding: 2rem;
-  background: #005fff;
+  background: var(--primary-color);
 }
 
 .auth__form-container_image {
@@ -45,12 +47,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
 
   padding: 2rem;
   box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
   border-radius: 5px;
   transition: 0.8s ease;
   background: #fff;
+  width: 20rem;
 }
 
 .auth__form-container_fields-content p {
@@ -64,7 +68,6 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-
   margin: 1rem 0rem;
 }
 
@@ -78,6 +81,7 @@ body {
 }
 
 .auth__form-container_fields-content_input input {
+  width: 100%;
   padding: 0.55rem 0.4rem;
   border: 1px solid rgb(184, 196, 194);
   border-radius: 4px;
@@ -119,6 +123,7 @@ body {
 }
 
 .auth__form-container_fields-content_button button {
+  width: 93%;
   border-radius: 4px;
   background: #005fff;
   border: 1px solid #005fff;
@@ -139,7 +144,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
   margin-top: 0.2rem;
 }
 
