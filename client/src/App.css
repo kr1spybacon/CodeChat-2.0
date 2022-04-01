@@ -1,6 +1,6 @@
 :root {
   /* --primary-color: #005fff; */
-  --primary-color: #002b75;
+  --primary-color: #15202b;
   --primary-color-alpha: #005fff1a;
 }
 
@@ -280,7 +280,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 120%;
-  color: #2c2c30;
+  color: #8899a6;
   margin-bottom: 10px;
 }
 
@@ -299,10 +299,12 @@ body {
 .channel__container {
   height: 100%;
   width: 100%;
+  background-color: #22303c;
 }
 
 .str-chat__thread {
   z-index: 1;
+  background-color: #22303c !important;
 }
 
 .str-chat__thread-list .str-chat__message-team {
@@ -598,7 +600,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #2c2c30;
+  color: #fff;
   margin-left: 20px;
 }
 
@@ -647,7 +649,8 @@ body {
 
 .create-channel__button-wrapper {
   height: 82px;
-  background: #f7f6f8;
+  /* background: #f7f6f8; */
+  background: #8899a6;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -713,7 +716,8 @@ body {
 }
 
 .user-item__wrapper:hover {
-  background: #f7f6f8;
+  /* background: #f7f6f8; */
+  background: var(--primary-color);
   cursor: pointer;
 }
 
@@ -728,7 +732,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #2c2c30;
+  color: #fff;
   word-break: break-all;
 }
 
@@ -748,7 +752,7 @@ body {
 .user-item__invite-empty {
   height: 28px;
   width: 28px;
-  background: #f7f6f8;
+  background: #8899a6;
   border: 1px solid #dedddf;
   border-radius: 14px;
   box-sizing: border-box;
@@ -775,7 +779,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #2c2c30;
+  color: #fff;
   margin-left: 20px;
 }
 
@@ -795,7 +799,7 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 120%;
-  color: #2c2c30;
+  color: #fff;
   margin-top: 30px;
 }
 
@@ -850,7 +854,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background: #ffffff;
+  background: var(--primary-color);
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 16px;
   z-index: 1;
@@ -863,13 +867,14 @@ body {
 
 .team-channel-header__channel-wrapper svg {
   cursor: pointer;
+  filter: invert(84%) sepia(1%) saturate(7448%) hue-rotate(185deg) brightness(74%) contrast(78%);
 }
 
 .team-channel-header__name {
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  color: #2c2c30;
+  color: #8899a6;
   margin-right: 8px;
 }
 
@@ -983,7 +988,7 @@ body {
   height: auto;
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: #8899a6;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   font-weight: bold;
@@ -1018,6 +1023,7 @@ body {
   max-width: 220px;
 }
 
+
 .channel-preview__item.single .str-chat__avatar {
   margin-right: 12px;
 }
@@ -1046,7 +1052,8 @@ body {
 }
 
 .str-chat__message-team:hover {
-  background: #e9e9ea;
+  /* background: #e9e9ea; */
+  background: var(--primary-color);
 }
 
 .str-chat__message-team-group {
@@ -1108,6 +1115,10 @@ body {
   border-left: none;
 }
 
+.str-chat__message-team-content--text span p {
+  color: #fff
+}
+
 .str-chat__message-team--received {
   padding-left: 20px;
 }
@@ -1120,7 +1131,8 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: rgba(255, 255, 255, 0.507);
 }
 
 .str-chat__message-replies-count-button:focus {
@@ -1166,7 +1178,7 @@ ul.str-chat__simple-reactions-list {
   display: flex;
   align-items: center;
   width: fit-content;
-  background: #ffffff;
+  /* background: #ffffff; */
   border: 1px solid #e9e9ea;
   box-sizing: border-box;
   border-radius: 50vw;
@@ -1197,7 +1209,7 @@ ul.str-chat__simple-reactions-list:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
-  color: #2c2c30;
+  color: #e9e9ea;
 }
 
 .str-chat__message-attachment-actions-form {
@@ -1408,6 +1420,10 @@ ul.str-chat__simple-reactions-list:hover {
 .team-message-input__input:focus-within .team-message-input__button path {
   fill: var(--primary-color);
   fill-opacity: 1;
+}
+
+textarea::placeholder {
+  color: #8899a6;
 }
 
 .team-message-input__wrapper .str-chat__textarea textarea {
@@ -1738,6 +1754,7 @@ div.rta__autocomplete.str-chat__emojisearch {
 .str-chat__input-flat {
   width: 100%;
   padding: 10px;
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 960px) {
